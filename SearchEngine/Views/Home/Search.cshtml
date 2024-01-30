@@ -1,0 +1,18 @@
+@model List<SearchResult>
+
+<h2>Sök resultat</h2>
+<ul>
+    @foreach (var result in Model)
+    {
+        <li>
+            <strong>@result.Title</strong>
+            <p>@result.Description</p>
+            <a href="@result.Url">Read more</a>
+
+            @if (!result.IsSaved)
+            {
+                <a href="@Url.Action("SaveResult" , new { resultIndex = Model.IndexOf(result) })">Save result</a>
+            }
+        </li>
+    }
+</ul>
