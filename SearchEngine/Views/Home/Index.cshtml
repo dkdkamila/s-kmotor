@@ -4,11 +4,15 @@
 
 <div class="text-center">
     <h1 class="display-4">Välkomna till DKDSEARCH</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <br>
+    <br>
+    <p>Skriv vad du söker efter i sökrutan:</p>
 </div>
 <br>
 <br>
-<form asp-controller="Home" asp-action="Search" method="post">
-    <input type="text" name="query" />
-    <button type="submit">Sök</button>
-</form>
+<div class="text-center">
+    <form asp-controller="Home" asp-action="Search" method="post">
+        <input type="text" name="query" />
+        <button type="submit">Sök</button>
+    </form>
+</div>

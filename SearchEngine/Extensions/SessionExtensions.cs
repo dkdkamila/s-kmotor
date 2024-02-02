@@ -1,6 +1,6 @@
-using Microsoft.AspNetCore.Http;
-using System.Text.Json;
 
+using System.Text.Json;
+namespace SearchEngine.Extensions;
 public static class SessionExtensions
 {
     public static T? GetObject<T>(this ISession session, string key)
