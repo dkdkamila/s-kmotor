@@ -11,8 +11,8 @@
 <br>
 <br>
 <div class="text-center">
-    <form asp-controller="Home" asp-action="Search" method="post">
-        <input type="text" name="query" />
-        <button type="submit">Sök</button>
+    <form class="d-flex" asp-controller="Home" asp-action="Search" method="post">
+        <input class="form-control me-5" type="text" name="query" placeholder="Sök" aria-label="Sök">
+        <button class="btn btn-outline-primary" type="submit">Sök</button>
     </form>
 </div>

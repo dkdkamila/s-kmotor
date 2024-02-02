@@ -25,3 +25,19 @@ body {
   margin-bottom: 60px;
   background-color: rgb(197, 249, 238);
 }
+
+h1 {
+  font-size: 36px;
+  color: cadetblue;
+
+}
+
+h2 {
+  font-size: 30px;
+  color: cadetblue;
+}
+
+p {
+  font-size: 20px;
+  color: darkslategrey;
+}

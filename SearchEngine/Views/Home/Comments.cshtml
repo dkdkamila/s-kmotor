@@ -1,22 +1,24 @@
 @model List<CommentModel>
 
 <h2>Kommentarer</h2>
-
-<form asp-action="AddComment" method="post">
-    <div>
-        <label for="userName">Användarnamn:</label>
-        <input type="text" name="userName" required>
+<form asp-action="AddComment" method="post" class="mt-4">
+    <div class="mb-3">
+        <label for="userName" class="form-label">Användarnamn:</label>
+        <input type="text" name="userName" class="form-control" required>
     </div>
-    <div>
-        <label for="comment">Kommentar:</label>
-        <textarea name="comment" required></textarea>
+    <div class="mb-3">
+        <label for="comment" class="form-label">Kommentar:</label>
+        <textarea name="comment" class="form-control" required></textarea>
     </div>
-    <div>
-        <button type="submit">Lägg till kommentar</button>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary rounded-pill">Lägg till kommentar</button>
     </div>
 </form>
 
-<h3>Alla kommentarer:</h3>
+
+<br>
+<br>
+<h2>Alla kommentarer:</h2>
 <ul>
     @foreach (var comment in Model)
     {
